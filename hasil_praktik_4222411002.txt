@@ -1,0 +1,17 @@
+==============================================================================
+  PRAKTIK TERPADU MINGGU 4-7 - RET503
+==============================================================================
+  NIM / Nama    : 4222411002 / Rio Tedy Adhyaksa Situmorang
+  Waktu         : 23-10-2026 15:08:49
+  Komputer/user : riootedy / rioot
+  Dataset       : dataset_v1  (sidik jari label: 209BE4388E5F)
+  Pengaturan    : model yolo26n, epochs 30, imgsz 416, batch 4
+==============================================================================
+  Eksperimen     Perubahan        mAP50  mAP50-95      P      R     ms   menit
+  E1_pretrained  -                0.349     0.177  0.336  0.379   30.8    20.8
+  E2_scratch     -                0.003     0.001  0.675  0.015   26.0    17.3
+  E3_tuning      imgsz=640        0.437     0.264  0.551  0.424   48.6    36.3
+==============================================================================
+  Model terpilih (mAP50-95 val tertinggi): E3_tuning
+  Hasil di data TEST (sekali saja)       : mAP50 0.684 | mAP50-95 0.445
+==============================================================================
